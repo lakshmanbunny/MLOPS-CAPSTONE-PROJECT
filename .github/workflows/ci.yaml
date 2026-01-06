@@ -37,7 +37,7 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }} # Optional, but good practice
         run: |
           export PYTHONPATH=$PYTHONPATH:.
-          dvc repro
+          dvc repro --force  # <--- ADD --force HERE
 
       - name: Run model tests
         env:
