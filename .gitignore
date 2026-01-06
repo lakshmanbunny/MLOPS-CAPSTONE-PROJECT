@@ -208,3 +208,5 @@ __marimo__/
 
 CRED.txt
 local_s3/
+data/
+models/
